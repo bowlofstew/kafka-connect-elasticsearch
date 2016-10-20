@@ -1,0 +1,7 @@
+language: java
+sudo: false # faster builds
+jdk:
+  - oraclejdk8
+before_install:
+  - git clone https://github.com/apache/kafka.git
+  - cd kafka && gradle installAll
